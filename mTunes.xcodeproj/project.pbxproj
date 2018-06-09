@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09093FDC20CC12AF00D9D0C1 /* MusicListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09093FDB20CC12AF00D9D0C1 /* MusicListCell.swift */; };
+		09093FDE20CC1DCC00D9D0C1 /* MusicAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09093FDD20CC1DCC00D9D0C1 /* MusicAPIManager.swift */; };
 		090A3E9720C70F7F00BB062A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A3E9620C70F7F00BB062A /* AppDelegate.swift */; };
 		090A3E9920C70F7F00BB062A /* AutorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A3E9820C70F7F00BB062A /* AutorizationViewController.swift */; };
 		090A3E9C20C70F7F00BB062A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090A3E9A20C70F7F00BB062A /* Main.storyboard */; };
@@ -68,6 +70,8 @@
 
 /* Begin PBXFileReference section */
 		01456D0720C7CB2B97CC1CEB /* MusicListInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListInteractorInput.swift; sourceTree = "<group>"; };
+		09093FDB20CC12AF00D9D0C1 /* MusicListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListCell.swift; sourceTree = "<group>"; };
+		09093FDD20CC1DCC00D9D0C1 /* MusicAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAPIManager.swift; sourceTree = "<group>"; };
 		090A3E9320C70F7F00BB062A /* mTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		090A3E9620C70F7F00BB062A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		090A3E9820C70F7F00BB062A /* AutorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationViewController.swift; sourceTree = "<group>"; };
@@ -256,6 +260,7 @@
 				09CA6ECA20CBC53700FA581A /* KeychainItemAccessibility.swift */,
 				09CA6EC920CBC53700FA581A /* KeychainWrapper.swift */,
 				09B9739320CAC36F00ACC6E2 /* AuthorizationAPIManager.swift */,
+				09093FDD20CC1DCC00D9D0C1 /* MusicAPIManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -387,6 +392,7 @@
 		9ACA835FB981F45BE6EAA557 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				09093FDB20CC12AF00D9D0C1 /* MusicListCell.swift */,
 				CDE189DE88D4B7B7B42F104A /* MusicListViewInput.swift */,
 				E053F6C8F38853A0D63C303D /* MusicListViewOutput.swift */,
 				E60FB4824801FFF70AB23E32 /* MusicListViewController.swift */,
@@ -690,9 +696,11 @@
 				ED8CDE10400D723E6EF7C130 /* MusicListViewOutput.swift in Sources */,
 				6B71F531AA2C00DF3069B8B0 /* MusicListViewController.swift in Sources */,
 				09B9739720CAC7B800ACC6E2 /* Profile.swift in Sources */,
+				09093FDC20CC12AF00D9D0C1 /* MusicListCell.swift in Sources */,
 				09B9739920CAC7CA00ACC6E2 /* Music.swift in Sources */,
 				4BA6CCE92DBF1D2DFE0C6840 /* MusicListModuleInput.swift in Sources */,
 				DD8E4AC5F28BD30572E1A34C /* MusicListPresenter.swift in Sources */,
+				09093FDE20CC1DCC00D9D0C1 /* MusicAPIManager.swift in Sources */,
 				B8DF87FEA30904F312DF5876 /* MusicListInteractorInput.swift in Sources */,
 				5119C8822FD80F6DF80A3348 /* MusicListInteractorOutput.swift in Sources */,
 				8804FF571DE23E18D84BC52E /* MusicListInteractor.swift in Sources */,

@@ -13,5 +13,8 @@ protocol MusicListViewInput: class {
         Setup initial state of the view
     */
 
-    func setupInitialState()
+    func updateState(rows: [Music])
+    
+    
+//    func setupInitialState()
 }

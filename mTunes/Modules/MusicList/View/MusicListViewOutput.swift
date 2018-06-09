@@ -14,4 +14,6 @@ protocol MusicListViewOutput {
     */
 
     func viewIsReady()
+    
+    func searchBarTextChanged(newText: String)
 }

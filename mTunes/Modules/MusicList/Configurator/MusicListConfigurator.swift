@@ -27,6 +27,17 @@ class MusicListModuleConfigurator {
 
         let interactor = MusicListInteractor()
         interactor.output = presenter
+        
+        
+        //TODO: Replace with Typhoon
+        let mam = MusicAPIManager()
+        mam.musicListURL = "http://127.0.0.1:8000/api/v0/music/"
+        mam.myMusicListURL = "http://127.0.0.1:8000/api/v0/mymusic/"
+        mam.user = KeychainWrapper.standard.string(forKey: "login")
+        mam.password = KeychainWrapper.standard.string(forKey: "password")
+        interactor.musicAPIManager = mam
+        
+        
 
         presenter.interactor = interactor
         viewController.output = presenter

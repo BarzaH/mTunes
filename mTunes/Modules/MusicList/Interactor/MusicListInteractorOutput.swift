@@ -10,4 +10,5 @@ import Foundation
 
 protocol MusicListInteractorOutput: class {
 
+    func processData(rawMusicListData: String?)
 }

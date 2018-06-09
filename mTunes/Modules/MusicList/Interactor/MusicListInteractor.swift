@@ -9,5 +9,13 @@
 class MusicListInteractor: MusicListInteractorInput {
 
     weak var output: MusicListInteractorOutput!
-
+    var musicAPIManager: MusicAPIManager?
+    
+    
+    func getMyMusicList() {
+        musicAPIManager?.sendMyMusicListRequest(completion: { [weak self] (result) in
+            self?.output.processData(rawMusicListData: result)
+        })
+    }
+    
 }

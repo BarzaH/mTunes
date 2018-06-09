@@ -8,8 +8,7 @@
 
 import Foundation
 
-class Music{
-    var album: String?
+struct Music{
     var name: String?
     var author: String?
     

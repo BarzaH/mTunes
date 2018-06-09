@@ -29,11 +29,24 @@ class AutorizationViewController: UIViewController {
     @IBAction func login(_ sender: Any) {
         let apiManager = appAssembly!.authorizationAPIManager() as! AuthorizationAPIManager
         
-        let success = apiManager.sendLoginRequest(self.login.text!, self.password.text!)
-        
-        if success {
-        self.performSegue(withIdentifier: "Login", sender: self)
+        apiManager.sendLoginRequest(self.login.text!, self.password.text!){ [weak self] in
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let nc = storyboard.instantiateViewController(withIdentifier: "MainNavigationController") as! UINavigationController
+            
+            if let rootVC = nc.viewControllers.first as? MusicListViewController {
+
+            rootVC.appAssembly = self?.appAssembly
+            
+                
+            self?.present(nc, animated: true, completion: nil)
+                
+            }
+            
         }
+        
+        
+       
+        
     }
     
    
