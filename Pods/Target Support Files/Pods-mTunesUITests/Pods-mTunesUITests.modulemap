@@ -1,0 +1,6 @@
+module Pods_mTunesUITests {
+  umbrella header "Pods-mTunesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (4.7.2)
+  - Localize-Swift (2.0.0)
+  - PromiseKit (6.2.8):
+    - PromiseKit/CorePromise (= 6.2.8)
+    - PromiseKit/Foundation (= 6.2.8)
+    - PromiseKit/UIKit (= 6.2.8)
+  - PromiseKit/CorePromise (6.2.8)
+  - PromiseKit/Foundation (6.2.8):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.2.8):
+    - PromiseKit/CorePromise
+  - Typhoon (3.5.1):
+    - Typhoon/no-arc (= 3.5.1)
+  - Typhoon/no-arc (3.5.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Localize-Swift (~> 2.0)
+  - PromiseKit (~> 6.0)
+  - Typhoon (= 3.5.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Localize-Swift
+    - PromiseKit
+    - Typhoon
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
+  PromiseKit: 6788ce1a0ed5448b83d4aaf56b9fc49fb7647d32
+  Typhoon: c0950bb9f2e835eb8a7dc6983160109b6baf2dda
+
+PODFILE CHECKSUM: 37f12a78f8c89b1802ec1b7ef88a450ece3e04f4
+
+COCOAPODS: 1.5.3
