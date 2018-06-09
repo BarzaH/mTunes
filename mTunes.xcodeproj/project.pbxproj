@@ -8,12 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		090A3E9720C70F7F00BB062A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A3E9620C70F7F00BB062A /* AppDelegate.swift */; };
-		090A3E9920C70F7F00BB062A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A3E9820C70F7F00BB062A /* ViewController.swift */; };
+		090A3E9920C70F7F00BB062A /* AutorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A3E9820C70F7F00BB062A /* AutorizationViewController.swift */; };
 		090A3E9C20C70F7F00BB062A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090A3E9A20C70F7F00BB062A /* Main.storyboard */; };
 		090A3E9E20C70F8100BB062A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 090A3E9D20C70F8100BB062A /* Assets.xcassets */; };
 		090A3EA120C70F8100BB062A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090A3E9F20C70F8100BB062A /* LaunchScreen.storyboard */; };
 		090A3EAC20C70F8100BB062A /* mTunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A3EAB20C70F8100BB062A /* mTunesTests.swift */; };
 		090A3EB720C70F8100BB062A /* mTunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A3EB620C70F8100BB062A /* mTunesUITests.swift */; };
+		09B9738C20CABC0A00ACC6E2 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9738B20CABC0A00ACC6E2 /* ApplicationAssembly.swift */; };
+		09B9738E20CABC1900ACC6E2 /* CoreComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9738D20CABC1900ACC6E2 /* CoreComponents.swift */; };
+		09B9739420CAC36F00ACC6E2 /* AuthorizationAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9739320CAC36F00ACC6E2 /* AuthorizationAPIManager.swift */; };
+		09B9739720CAC7B800ACC6E2 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9739620CAC7B800ACC6E2 /* Profile.swift */; };
+		09B9739920CAC7CA00ACC6E2 /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9739820CAC7CA00ACC6E2 /* Music.swift */; };
+		09B9739C20CAD1FC00ACC6E2 /* MusicListModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9739B20CAD1FC00ACC6E2 /* MusicListModuleAssembly.swift */; };
+		09CA6ECB20CBC53700FA581A /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CA6EC920CBC53700FA581A /* KeychainWrapper.swift */; };
+		09CA6ECC20CBC53700FA581A /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CA6ECA20CBC53700FA581A /* KeychainItemAccessibility.swift */; };
+		0C6BC4C448F4875918BBC9EB /* MusicListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74553C1D79D56A54D94ECC63 /* MusicListPresenterTests.swift */; };
+		2A34F062231D4505EEE6CD41 /* Pods_mTunes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D04D36930DFC3A1A9976F06 /* Pods_mTunes.framework */; };
+		33EC5F06182E475FBDE7F718 /* MTNSAuthorizationViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CACBA99525A87F86BFB727 /* MTNSAuthorizationViewTests.swift */; };
+		379005C59D9ED187D3BB71AD /* MusicListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CAFB8AB24AE5E70FE6F9C9 /* MusicListConfigurator.swift */; };
+		38705224974CE78DFF0685A4 /* libPods-mTunesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A01EC837339DE1017D76745F /* libPods-mTunesTests.a */; };
+		4329E000DB0033A18784A7DA /* MusicListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF2044F802D69AE8963CD59 /* MusicListRouterTests.swift */; };
+		4BA6CCE92DBF1D2DFE0C6840 /* MusicListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1399D2EBCD555E074BF08DF8 /* MusicListModuleInput.swift */; };
+		5119C8822FD80F6DF80A3348 /* MusicListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A634A75F7E8DE990784B134 /* MusicListInteractorOutput.swift */; };
+		57F3769BE0AD4152DAE4A12E /* MusicListConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B436560AC275A9452389857 /* MusicListConfiguratorTests.swift */; };
+		5E85E1FA7BDFDAC90F150B4D /* MusicListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC51C8D8622342F1DC2F44 /* MusicListViewTests.swift */; };
+		61B4484ABD6A16FA190E35D6 /* MusicListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED41CDF4FE8CA1028BCCFA1 /* MusicListRouterInput.swift */; };
+		6B71F531AA2C00DF3069B8B0 /* MusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60FB4824801FFF70AB23E32 /* MusicListViewController.swift */; };
+		8804FF571DE23E18D84BC52E /* MusicListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C8E4204076F99003588D0 /* MusicListInteractor.swift */; };
+		B8DF87FEA30904F312DF5876 /* MusicListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01456D0720C7CB2B97CC1CEB /* MusicListInteractorInput.swift */; };
+		C094C0F8F6EE6BA8B4826ABC /* MTNSAuthorizationRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC712DB0FF23F05B4DF1603 /* MTNSAuthorizationRouterTests.swift */; };
+		D2553F4518597F66F2183CD8 /* MusicListInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78E58E8CCA16134DD768176 /* MusicListInitializer.swift */; };
+		D436DFDB1B732CAE77B11BD7 /* MusicListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE189DE88D4B7B7B42F104A /* MusicListViewInput.swift */; };
+		DD8E4AC5F28BD30572E1A34C /* MusicListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F047474693242A65FC770635 /* MusicListPresenter.swift */; };
+		E2C51A594D07C725A7F5509F /* libPods-mTunesUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F945E7C7713EC7731122182D /* libPods-mTunesUITests.a */; };
+		E4AE128D0D21303DD2AE9DEA /* MTNSAuthorizationPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFF822653BDD9B14BEF6AF9 /* MTNSAuthorizationPresenterTests.swift */; };
+		E51A7A5EBC847654BF43846F /* MusicListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC64F1DDEE5CB21CBF393022 /* MusicListInteractorTests.swift */; };
+		EAE03F1FC61E74F06ED8248C /* MTNSAuthorizationInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC4E096CBF9B15A43F1AA57 /* MTNSAuthorizationInteractorTests.swift */; };
+		ED8CDE10400D723E6EF7C130 /* MusicListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E053F6C8F38853A0D63C303D /* MusicListViewOutput.swift */; };
+		EF441BDCF777B18E8AF65087 /* MusicListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8495A348B64D113C481EA3E /* MusicListRouter.swift */; };
+		FFF87DC19FF2A39DF8CF9B88 /* MTNSAuthorizationConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2492D07F9D5E94BDA0B9CA /* MTNSAuthorizationConfiguratorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +67,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01456D0720C7CB2B97CC1CEB /* MusicListInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListInteractorInput.swift; sourceTree = "<group>"; };
 		090A3E9320C70F7F00BB062A /* mTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		090A3E9620C70F7F00BB062A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		090A3E9820C70F7F00BB062A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		090A3E9820C70F7F00BB062A /* AutorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationViewController.swift; sourceTree = "<group>"; };
 		090A3E9B20C70F7F00BB062A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		090A3E9D20C70F8100BB062A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		090A3EA020C70F8100BB062A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +81,44 @@
 		090A3EB220C70F8100BB062A /* mTunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mTunesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		090A3EB620C70F8100BB062A /* mTunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mTunesUITests.swift; sourceTree = "<group>"; };
 		090A3EB820C70F8100BB062A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09B9738B20CABC0A00ACC6E2 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
+		09B9738D20CABC1900ACC6E2 /* CoreComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreComponents.swift; sourceTree = "<group>"; };
+		09B9739320CAC36F00ACC6E2 /* AuthorizationAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationAPIManager.swift; sourceTree = "<group>"; };
+		09B9739620CAC7B800ACC6E2 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		09B9739820CAC7CA00ACC6E2 /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		09B9739B20CAD1FC00ACC6E2 /* MusicListModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListModuleAssembly.swift; sourceTree = "<group>"; };
+		09CA6EC920CBC53700FA581A /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		09CA6ECA20CBC53700FA581A /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
+		1399D2EBCD555E074BF08DF8 /* MusicListModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListModuleInput.swift; sourceTree = "<group>"; };
+		1CF2044F802D69AE8963CD59 /* MusicListRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListRouterTests.swift; sourceTree = "<group>"; };
+		3A634A75F7E8DE990784B134 /* MusicListInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListInteractorOutput.swift; sourceTree = "<group>"; };
+		3AA80851B8BE3DF55B0FC56A /* Pods-mTunesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mTunesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mTunesTests/Pods-mTunesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D04D36930DFC3A1A9976F06 /* Pods_mTunes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mTunes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		541C8E4204076F99003588D0 /* MusicListInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListInteractor.swift; sourceTree = "<group>"; };
+		6C79BB2A9A54E7FE2E83187F /* Pods-mTunesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mTunesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mTunesUITests/Pods-mTunesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EFF822653BDD9B14BEF6AF9 /* MTNSAuthorizationPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MTNSAuthorizationPresenterTests.swift; sourceTree = "<group>"; };
+		74553C1D79D56A54D94ECC63 /* MusicListPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListPresenterTests.swift; sourceTree = "<group>"; };
+		7B436560AC275A9452389857 /* MusicListConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListConfiguratorTests.swift; sourceTree = "<group>"; };
+		7EC712DB0FF23F05B4DF1603 /* MTNSAuthorizationRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MTNSAuthorizationRouterTests.swift; sourceTree = "<group>"; };
+		8ED41CDF4FE8CA1028BCCFA1 /* MusicListRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListRouterInput.swift; sourceTree = "<group>"; };
+		A01EC837339DE1017D76745F /* libPods-mTunesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mTunesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3CAFB8AB24AE5E70FE6F9C9 /* MusicListConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListConfigurator.swift; sourceTree = "<group>"; };
+		A5DC51C8D8622342F1DC2F44 /* MusicListViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListViewTests.swift; sourceTree = "<group>"; };
+		ADF9A9BAEDADA74D1DB70EB1 /* Pods-mTunesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mTunesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mTunesTests/Pods-mTunesTests.release.xcconfig"; sourceTree = "<group>"; };
+		B8495A348B64D113C481EA3E /* MusicListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListRouter.swift; sourceTree = "<group>"; };
+		C36A60CC4CFC132F06E779C2 /* Pods-mTunesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mTunesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mTunesUITests/Pods-mTunesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CC64F1DDEE5CB21CBF393022 /* MusicListInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListInteractorTests.swift; sourceTree = "<group>"; };
+		CDE189DE88D4B7B7B42F104A /* MusicListViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListViewInput.swift; sourceTree = "<group>"; };
+		CFC4E096CBF9B15A43F1AA57 /* MTNSAuthorizationInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MTNSAuthorizationInteractorTests.swift; sourceTree = "<group>"; };
+		D78E58E8CCA16134DD768176 /* MusicListInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListInitializer.swift; sourceTree = "<group>"; };
+		D8CACBA99525A87F86BFB727 /* MTNSAuthorizationViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MTNSAuthorizationViewTests.swift; sourceTree = "<group>"; };
+		E053F6C8F38853A0D63C303D /* MusicListViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListViewOutput.swift; sourceTree = "<group>"; };
+		E24071838898DBB3BAE3B3EC /* Pods-mTunes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mTunes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mTunes/Pods-mTunes.debug.xcconfig"; sourceTree = "<group>"; };
+		E555B8261F8877E73A8DB621 /* Pods-mTunes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mTunes.release.xcconfig"; path = "Pods/Target Support Files/Pods-mTunes/Pods-mTunes.release.xcconfig"; sourceTree = "<group>"; };
+		E60FB4824801FFF70AB23E32 /* MusicListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListViewController.swift; sourceTree = "<group>"; };
+		F047474693242A65FC770635 /* MusicListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListPresenter.swift; sourceTree = "<group>"; };
+		F945E7C7713EC7731122182D /* libPods-mTunesUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mTunesUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD2492D07F9D5E94BDA0B9CA /* MTNSAuthorizationConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MTNSAuthorizationConfiguratorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A34F062231D4505EEE6CD41 /* Pods_mTunes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38705224974CE78DFF0685A4 /* libPods-mTunesTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C51A594D07C725A7F5509F /* libPods-mTunesUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +156,8 @@
 				090A3EAA20C70F8100BB062A /* mTunesTests */,
 				090A3EB520C70F8100BB062A /* mTunesUITests */,
 				090A3E9420C70F7F00BB062A /* Products */,
+				B32CC6A16516371E53B5E218 /* Pods */,
+				9C8CB7BE417D4A1E4295FA47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +174,15 @@
 		090A3E9520C70F7F00BB062A /* mTunes */ = {
 			isa = PBXGroup;
 			children = (
+				09B9739520CAC7A600ACC6E2 /* Entities */,
+				09B9739220CAC35400ACC6E2 /* Services */,
+				09B9738A20CABBD000ACC6E2 /* InitialAssemblies */,
+				092C998820C72E7E00411EF9 /* Modules */,
+				090A3EC420C70FD800BB062A /* Supporting Files */,
 				090A3E9620C70F7F00BB062A /* AppDelegate.swift */,
-				090A3E9820C70F7F00BB062A /* ViewController.swift */,
-				090A3E9A20C70F7F00BB062A /* Main.storyboard */,
-				090A3E9D20C70F8100BB062A /* Assets.xcassets */,
-				090A3E9F20C70F8100BB062A /* LaunchScreen.storyboard */,
 				090A3EA220C70F8100BB062A /* Info.plist */,
+				090A3E9A20C70F7F00BB062A /* Main.storyboard */,
+				090A3E9F20C70F8100BB062A /* LaunchScreen.storyboard */,
 			);
 			path = mTunes;
 			sourceTree = "<group>";
@@ -110,6 +190,7 @@
 		090A3EAA20C70F8100BB062A /* mTunesTests */ = {
 			isa = PBXGroup;
 			children = (
+				092C998920C72F9500411EF9 /* Modules */,
 				090A3EAB20C70F8100BB062A /* mTunesTests.swift */,
 				090A3EAD20C70F8100BB062A /* Info.plist */,
 			);
@@ -125,6 +206,264 @@
 			path = mTunesUITests;
 			sourceTree = "<group>";
 		};
+		090A3EC420C70FD800BB062A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				090A3E9D20C70F8100BB062A /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		092C998820C72E7E00411EF9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				09B9739020CAC32900ACC6E2 /* Authorization */,
+				D61890EB681CBE64CF3A1853 /* MusicList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		092C998920C72F9500411EF9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5EBA1E0741E1C51E8E0AA993 /* Authorization */,
+				91A1CDD19C3085BE0AB88544 /* MusicList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		09B9738A20CABBD000ACC6E2 /* InitialAssemblies */ = {
+			isa = PBXGroup;
+			children = (
+				09B9738B20CABC0A00ACC6E2 /* ApplicationAssembly.swift */,
+				09B9738D20CABC1900ACC6E2 /* CoreComponents.swift */,
+			);
+			path = InitialAssemblies;
+			sourceTree = "<group>";
+		};
+		09B9739020CAC32900ACC6E2 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				090A3E9820C70F7F00BB062A /* AutorizationViewController.swift */,
+			);
+			name = Authorization;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		09B9739220CAC35400ACC6E2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				09CA6ECA20CBC53700FA581A /* KeychainItemAccessibility.swift */,
+				09CA6EC920CBC53700FA581A /* KeychainWrapper.swift */,
+				09B9739320CAC36F00ACC6E2 /* AuthorizationAPIManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		09B9739520CAC7A600ACC6E2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				09B9739620CAC7B800ACC6E2 /* Profile.swift */,
+				09B9739820CAC7CA00ACC6E2 /* Music.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		09B9739A20CAD1DF00ACC6E2 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				09B9739B20CAD1FC00ACC6E2 /* MusicListModuleAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		0A4D45DB161772BEFAD1BDA7 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				FD2492D07F9D5E94BDA0B9CA /* MTNSAuthorizationConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		2BD84338B500BFA8A6034648 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CFC4E096CBF9B15A43F1AA57 /* MTNSAuthorizationInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3D8350D5FEE148823B6F2679 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CC64F1DDEE5CB21CBF393022 /* MusicListInteractorTests.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		438EEF75C9FB1BA03007E307 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				7B436560AC275A9452389857 /* MusicListConfiguratorTests.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		4E6BD5B4A30F1C9E9CCAE9AD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1399D2EBCD555E074BF08DF8 /* MusicListModuleInput.swift */,
+				F047474693242A65FC770635 /* MusicListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5148C01DD738C98C1ECDE994 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5DC51C8D8622342F1DC2F44 /* MusicListViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5EBA1E0741E1C51E8E0AA993 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				0A4D45DB161772BEFAD1BDA7 /* Configurator */,
+				992D2ED57D1C4338A2862E03 /* View */,
+				2BD84338B500BFA8A6034648 /* Interactor */,
+				A04888D63401E51A94C47744 /* Presenter */,
+				E05598F9BCE44E75FD5D009F /* Router */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		7DF65440B04B991750E730B1 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				A3CAFB8AB24AE5E70FE6F9C9 /* MusicListConfigurator.swift */,
+				D78E58E8CCA16134DD768176 /* MusicListInitializer.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		8AF5F962577222F0C1146B32 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				74553C1D79D56A54D94ECC63 /* MusicListPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8FEC35CADB2E3DFC6A279424 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8ED41CDF4FE8CA1028BCCFA1 /* MusicListRouterInput.swift */,
+				B8495A348B64D113C481EA3E /* MusicListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		91A1CDD19C3085BE0AB88544 /* MusicList */ = {
+			isa = PBXGroup;
+			children = (
+				438EEF75C9FB1BA03007E307 /* Configurator */,
+				5148C01DD738C98C1ECDE994 /* View */,
+				3D8350D5FEE148823B6F2679 /* Interactor */,
+				8AF5F962577222F0C1146B32 /* Presenter */,
+				B9E2A536164D9188DCD82D88 /* Router */,
+			);
+			path = MusicList;
+			sourceTree = "<group>";
+		};
+		992D2ED57D1C4338A2862E03 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D8CACBA99525A87F86BFB727 /* MTNSAuthorizationViewTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9ACA835FB981F45BE6EAA557 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDE189DE88D4B7B7B42F104A /* MusicListViewInput.swift */,
+				E053F6C8F38853A0D63C303D /* MusicListViewOutput.swift */,
+				E60FB4824801FFF70AB23E32 /* MusicListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9C8CB7BE417D4A1E4295FA47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D04D36930DFC3A1A9976F06 /* Pods_mTunes.framework */,
+				A01EC837339DE1017D76745F /* libPods-mTunesTests.a */,
+				F945E7C7713EC7731122182D /* libPods-mTunesUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A04888D63401E51A94C47744 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6EFF822653BDD9B14BEF6AF9 /* MTNSAuthorizationPresenterTests.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B32CC6A16516371E53B5E218 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E24071838898DBB3BAE3B3EC /* Pods-mTunes.debug.xcconfig */,
+				E555B8261F8877E73A8DB621 /* Pods-mTunes.release.xcconfig */,
+				3AA80851B8BE3DF55B0FC56A /* Pods-mTunesTests.debug.xcconfig */,
+				ADF9A9BAEDADA74D1DB70EB1 /* Pods-mTunesTests.release.xcconfig */,
+				6C79BB2A9A54E7FE2E83187F /* Pods-mTunesUITests.debug.xcconfig */,
+				C36A60CC4CFC132F06E779C2 /* Pods-mTunesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B9E2A536164D9188DCD82D88 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1CF2044F802D69AE8963CD59 /* MusicListRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		D61890EB681CBE64CF3A1853 /* MusicList */ = {
+			isa = PBXGroup;
+			children = (
+				09B9739A20CAD1DF00ACC6E2 /* Assembly */,
+				9ACA835FB981F45BE6EAA557 /* View */,
+				4E6BD5B4A30F1C9E9CCAE9AD /* Presenter */,
+				EE0E107CFC671113C16FFB08 /* Interactor */,
+				8FEC35CADB2E3DFC6A279424 /* Router */,
+				7DF65440B04B991750E730B1 /* Configurator */,
+			);
+			path = MusicList;
+			sourceTree = "<group>";
+		};
+		E05598F9BCE44E75FD5D009F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7EC712DB0FF23F05B4DF1603 /* MTNSAuthorizationRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EE0E107CFC671113C16FFB08 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				01456D0720C7CB2B97CC1CEB /* MusicListInteractorInput.swift */,
+				3A634A75F7E8DE990784B134 /* MusicListInteractorOutput.swift */,
+				541C8E4204076F99003588D0 /* MusicListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +471,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 090A3EBB20C70F8100BB062A /* Build configuration list for PBXNativeTarget "mTunes" */;
 			buildPhases = (
+				632E9FF3FE990AF14AAB4288 /* [CP] Check Pods Manifest.lock */,
 				090A3E8F20C70F7F00BB062A /* Sources */,
 				090A3E9020C70F7F00BB062A /* Frameworks */,
 				090A3E9120C70F7F00BB062A /* Resources */,
+				1F964531A792809E1697FB20 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +490,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 090A3EBE20C70F8100BB062A /* Build configuration list for PBXNativeTarget "mTunesTests" */;
 			buildPhases = (
+				0C556B4BAE29A5428E5F1C56 /* [CP] Check Pods Manifest.lock */,
 				090A3EA320C70F8100BB062A /* Sources */,
 				090A3EA420C70F8100BB062A /* Frameworks */,
 				090A3EA520C70F8100BB062A /* Resources */,
@@ -167,6 +509,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 090A3EC120C70F8100BB062A /* Build configuration list for PBXNativeTarget "mTunesUITests" */;
 			buildPhases = (
+				754024DB3CEE191429614BCC /* [CP] Check Pods Manifest.lock */,
 				090A3EAE20C70F8100BB062A /* Sources */,
 				090A3EAF20C70F8100BB062A /* Frameworks */,
 				090A3EB020C70F8100BB062A /* Resources */,
@@ -251,13 +594,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C556B4BAE29A5428E5F1C56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mTunesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F964531A792809E1697FB20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mTunes/Pods-mTunes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-framework/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Localize-Swift-framework/Localize_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit-framework/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Typhoon-framework/Typhoon.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Typhoon.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mTunes/Pods-mTunes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		632E9FF3FE990AF14AAB4288 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mTunes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		754024DB3CEE191429614BCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mTunesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		090A3E8F20C70F7F00BB062A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				090A3E9920C70F7F00BB062A /* ViewController.swift in Sources */,
+				090A3E9920C70F7F00BB062A /* AutorizationViewController.swift in Sources */,
+				09B9738C20CABC0A00ACC6E2 /* ApplicationAssembly.swift in Sources */,
 				090A3E9720C70F7F00BB062A /* AppDelegate.swift in Sources */,
+				09CA6ECB20CBC53700FA581A /* KeychainWrapper.swift in Sources */,
+				09B9739C20CAD1FC00ACC6E2 /* MusicListModuleAssembly.swift in Sources */,
+				09B9739420CAC36F00ACC6E2 /* AuthorizationAPIManager.swift in Sources */,
+				D436DFDB1B732CAE77B11BD7 /* MusicListViewInput.swift in Sources */,
+				ED8CDE10400D723E6EF7C130 /* MusicListViewOutput.swift in Sources */,
+				6B71F531AA2C00DF3069B8B0 /* MusicListViewController.swift in Sources */,
+				09B9739720CAC7B800ACC6E2 /* Profile.swift in Sources */,
+				09B9739920CAC7CA00ACC6E2 /* Music.swift in Sources */,
+				4BA6CCE92DBF1D2DFE0C6840 /* MusicListModuleInput.swift in Sources */,
+				DD8E4AC5F28BD30572E1A34C /* MusicListPresenter.swift in Sources */,
+				B8DF87FEA30904F312DF5876 /* MusicListInteractorInput.swift in Sources */,
+				5119C8822FD80F6DF80A3348 /* MusicListInteractorOutput.swift in Sources */,
+				8804FF571DE23E18D84BC52E /* MusicListInteractor.swift in Sources */,
+				61B4484ABD6A16FA190E35D6 /* MusicListRouterInput.swift in Sources */,
+				EF441BDCF777B18E8AF65087 /* MusicListRouter.swift in Sources */,
+				379005C59D9ED187D3BB71AD /* MusicListConfigurator.swift in Sources */,
+				09B9738E20CABC1900ACC6E2 /* CoreComponents.swift in Sources */,
+				D2553F4518597F66F2183CD8 /* MusicListInitializer.swift in Sources */,
+				09CA6ECC20CBC53700FA581A /* KeychainItemAccessibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +710,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				090A3EAC20C70F8100BB062A /* mTunesTests.swift in Sources */,
+				FFF87DC19FF2A39DF8CF9B88 /* MTNSAuthorizationConfiguratorTests.swift in Sources */,
+				33EC5F06182E475FBDE7F718 /* MTNSAuthorizationViewTests.swift in Sources */,
+				EAE03F1FC61E74F06ED8248C /* MTNSAuthorizationInteractorTests.swift in Sources */,
+				E4AE128D0D21303DD2AE9DEA /* MTNSAuthorizationPresenterTests.swift in Sources */,
+				C094C0F8F6EE6BA8B4826ABC /* MTNSAuthorizationRouterTests.swift in Sources */,
+				57F3769BE0AD4152DAE4A12E /* MusicListConfiguratorTests.swift in Sources */,
+				5E85E1FA7BDFDAC90F150B4D /* MusicListViewTests.swift in Sources */,
+				E51A7A5EBC847654BF43846F /* MusicListInteractorTests.swift in Sources */,
+				0C6BC4C448F4875918BBC9EB /* MusicListPresenterTests.swift in Sources */,
+				4329E000DB0033A18784A7DA /* MusicListRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +882,7 @@
 		};
 		090A3EBC20C70F8100BB062A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E24071838898DBB3BAE3B3EC /* Pods-mTunes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +900,7 @@
 		};
 		090A3EBD20C70F8100BB062A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E555B8261F8877E73A8DB621 /* Pods-mTunes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +918,7 @@
 		};
 		090A3EBF20C70F8100BB062A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA80851B8BE3DF55B0FC56A /* Pods-mTunesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +939,7 @@
 		};
 		090A3EC020C70F8100BB062A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADF9A9BAEDADA74D1DB70EB1 /* Pods-mTunesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +960,7 @@
 		};
 		090A3EC220C70F8100BB062A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C79BB2A9A54E7FE2E83187F /* Pods-mTunesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +980,7 @@
 		};
 		090A3EC320C70F8100BB062A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C36A60CC4CFC132F06E779C2 /* Pods-mTunesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,30 @@
+### Headers settings
+company: InnoUniv
+
+### Xcode project settings
+project_name: mTunes
+xcodeproj_path: mTunes.xcodeproj
+
+
+### Code generation settings section
+# The main project target name
+project_target: mTunes
+
+### Tests generation settings section
+# The tests target name
+test_target: mTunesTests
+
+### Dependencies settings section
+podfile_path: Podfile
+
+
+project_file_path: mTunes/Modules
+project_group_path: mTunes/Modules
+test_file_path: mTunesTests/Modules
+test_group_path: mTunesTests/Modules
+
+### Templates
+templates:
+- {name: rviper_controller}
+- {name: mvvm_controller}
+- {name: swifty_viper}
