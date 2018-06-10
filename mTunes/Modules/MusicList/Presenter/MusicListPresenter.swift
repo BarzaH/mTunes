@@ -12,42 +12,74 @@ class MusicListPresenter: MusicListModuleInput, MusicListViewOutput, MusicListIn
     var interactor: MusicListInteractorInput!
     var router: MusicListRouterInput!
 
-    var rawMusicList: [String]?
+    var rawMyMusicList: [String]?
+    var rawGlobalMusicList: [String]?
     
     func viewIsReady() {
-       interactor.getMyMusicList()
+       interactor.getMyMusicList(filtering: "")
+    }
+    
+    func addToMyMusic(cell: GlobalMusicListCell){
         
+        let author = (cell.model!.author)!
+        let name = (cell.model!.name)!
+        
+        let stringReprecentationOfModel: String = "\(author)-\(name)"
+        (self.rawMyMusicList)!.append(stringReprecentationOfModel)
+        self.rawGlobalMusicList = self.rawGlobalMusicList?.filter({(s) in s != stringReprecentationOfModel})
+        
+        
+        
+        processMyMusicData(rawMyMusicList: self.rawMyMusicList)
+        processGlobalMusicData(rawGlobalMusicList: self.rawGlobalMusicList)
     }
     
     func searchBarTextChanged(newText: String){
-        let filteredData = newText.isEmpty ? nil : rawMusicList?.filter({(dataString: String) -> Bool in
+        interactor.getGlobalMusicList(filtering: newText)
+        
+        
+        let filteredData = newText.isEmpty ? nil : rawMyMusicList?.filter({(dataString: String) -> Bool in
             return dataString.range(of: newText, options: .caseInsensitive) != nil
         })
         
+        
+        let rows: [Music]
+        
         if let fd = filteredData{
-        processRawMusicList(rawMusicList: fd)
+            rows =  processRawMusicList(rawMusicList: fd)
         }
         else{
-            processRawMusicList(rawMusicList: self.rawMusicList)
+            rows = processRawMusicList(rawMusicList: self.rawMyMusicList)
         }
+        
+        view.updateState(myMusicRows: rows)
     }
     
-    func processData(rawMusicListData: String?) {
+    func processMyMusicData(rawMyMusicList: [String]?) {
         
-        self.rawMusicList = rawMusicListData?.components(separatedBy: "\n")
+        self.rawMyMusicList = rawMyMusicList
         
-        processRawMusicList(rawMusicList: rawMusicList)
+        let rows = processRawMusicList(rawMusicList: rawMyMusicList)
+        
+        view.updateState(myMusicRows: rows)
     }
     
-    func processRawMusicList(rawMusicList: [String]?){
+    func processGlobalMusicData(rawGlobalMusicList: [String]?) {
+        
+        self.rawGlobalMusicList = rawGlobalMusicList
+        
+        let rows = processRawMusicList(rawMusicList: self.rawGlobalMusicList)
+        
+        view.updateState(globalMusicRows: rows)
+    }
+    
+    func processRawMusicList(rawMusicList: [String]?) -> [Music] {
         var rows = [Music]()
         rawMusicList?.forEach{ (element) in
             var musicInfo = element.components(separatedBy: "-")
             rows.append(Music(name: musicInfo[1], author: musicInfo[0]))
         }
-        
-        
-        view.updateState(rows: rows)
+        return rows
     }
     
 }

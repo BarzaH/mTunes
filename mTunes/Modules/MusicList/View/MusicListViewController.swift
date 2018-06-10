@@ -11,13 +11,44 @@ import UIKit
 class MusicListViewController: UITableViewController, UISearchBarDelegate, MusicListViewInput {
 
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var profileButton: UIBarButtonItem!
     
     var output: MusicListViewOutput!
     var appAssembly: ApplicationAssembly?
     
-//    var filteredData: [String]!
+    @IBAction func addMusic(_ sender: UIButton) {
+        
+        sender.setTitle("Added", for: .normal)
+        
+        var senderCell = sender.superview?.superview as! UITableViewCell
+        
+        let indexPath = self.tableView.indexPath(for: senderCell)
+        
+        senderCell = self.tableView.cellForRow(at: indexPath!)!
+        
+        output.addToMyMusic(cell: senderCell as! GlobalMusicListCell)
+    }
     
-    var rows = [Music](){
+    
+    func loadMenu(){
+        if revealViewController() != nil{
+            profileButton.target = revealViewController()
+            profileButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            revealViewController().rearViewRevealWidth = 275
+            
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+    }
+    
+    
+    
+    var myMusicRows = [Music](){
+        didSet{
+            self.tableView.reloadData()
+        }
+    }
+    
+    var globalMusicRows = [Music](){
         didSet{
             self.tableView.reloadData()
         }
@@ -29,41 +60,48 @@ class MusicListViewController: UITableViewController, UISearchBarDelegate, Music
         self.tableView.delegate = self
         self.searchBar.delegate = self
         
+        loadMenu()
         output.viewIsReady()
     }
 
 
     // MARK: MusicListViewInput
-    func updateState(rows: [Music]) {        
-        self.rows = rows
+    func updateState(myMusicRows: [Music]) {        
+        self.myMusicRows = myMusicRows
+    }
+    
+    func updateState(globalMusicRows: [Music]) {
+        self.globalMusicRows = globalMusicRows
     }
 }
 
 extension MusicListViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
-        let nos = (self.searchBar.text?.isEmpty)! ? 1 : 2
+        let nos = (self.searchBar.text?.isEmpty)! || self.globalMusicRows.count == 0 ? 1 : 2
         
         return nos
     }
 
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rows.count
+        
+        return section == 0 ? myMusicRows.count : globalMusicRows.count
+        
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             
-        let model = rows[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier", for: indexPath) as! MusicListCell
+        let model = myMusicRows[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier", for: indexPath) as! MyMusicListCell
         cell.model = model
         return cell
             
         }
         else {
             
-            let model = rows[indexPath.row]
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier", for: indexPath) as! MusicListCell
+            let model = globalMusicRows[indexPath.row]
+            let cell = tableView.dequeueReusableCell(withIdentifier: "globalCellReuseIdentifier", for: indexPath) as! GlobalMusicListCell
             cell.model = model
             return cell
             
@@ -71,12 +109,11 @@ extension MusicListViewController {
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 {
-            return "My music"
-        }
-        else{
-            return "Global search"
-        }
+        return section == 0 ? "My music" : "Global search"
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(55)
     }
 }
 

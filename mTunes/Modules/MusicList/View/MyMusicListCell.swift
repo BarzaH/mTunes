@@ -8,7 +8,7 @@
 import UIKit
 import Foundation
 
-class MusicListCell: UITableViewCell{
+class MyMusicListCell: UITableViewCell{
     
     @IBOutlet weak var name: UILabel!
     

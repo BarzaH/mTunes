@@ -17,34 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        KeychainWrapper.standard.removeAllKeys()
+//        KeychainWrapper.standard.removeAllKeys()
        
+        let authView = (self.window?.rootViewController as? AutorizationViewController)!
+        authView.appAssembly = self.assembly
         
         if let _ = KeychainWrapper.standard.string(forKey: "login"),
         let _ = KeychainWrapper.standard.string(forKey: "password"),
         let _ = KeychainWrapper.standard.string(forKey: "token")
         {
-            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-           
-            let nc = storyboard.instantiateViewController(withIdentifier: "MainNavigationController") as! UINavigationController
-            
-            let rootVC = storyboard.instantiateViewController(withIdentifier: "MusicListViewController") as! MusicListViewController
-            
-            //TODO: replace with typhoon injections
-            MusicListModuleConfigurator().configureModuleForViewInput(viewInput: rootVC)
-            
-            rootVC.appAssembly = self.assembly
-            
-            
-            self.window?.rootViewController = nc
+            authView.successAuthentication()
+        }
 
-        }
-        else{
-           
-            let vc = (self.window?.rootViewController as? AutorizationViewController)!
-            vc.appAssembly = self.assembly
-        }
-        
         
         return true
     }

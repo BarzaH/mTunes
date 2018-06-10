@@ -37,7 +37,6 @@ class MusicListModuleConfigurator {
         mam.password = KeychainWrapper.standard.string(forKey: "password")
         interactor.musicAPIManager = mam
         
-        
 
         presenter.interactor = interactor
         viewController.output = presenter

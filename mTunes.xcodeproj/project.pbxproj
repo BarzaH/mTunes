@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09093FDC20CC12AF00D9D0C1 /* MusicListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09093FDB20CC12AF00D9D0C1 /* MusicListCell.swift */; };
+		09093FDC20CC12AF00D9D0C1 /* MyMusicListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09093FDB20CC12AF00D9D0C1 /* MyMusicListCell.swift */; };
 		09093FDE20CC1DCC00D9D0C1 /* MusicAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09093FDD20CC1DCC00D9D0C1 /* MusicAPIManager.swift */; };
+		09093FE020CC802B00D9D0C1 /* GlobalMusicListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09093FDF20CC802B00D9D0C1 /* GlobalMusicListCell.swift */; };
 		090A3E9720C70F7F00BB062A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A3E9620C70F7F00BB062A /* AppDelegate.swift */; };
 		090A3E9920C70F7F00BB062A /* AutorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A3E9820C70F7F00BB062A /* AutorizationViewController.swift */; };
 		090A3E9C20C70F7F00BB062A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090A3E9A20C70F7F00BB062A /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 		090A3EA120C70F8100BB062A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 090A3E9F20C70F8100BB062A /* LaunchScreen.storyboard */; };
 		090A3EAC20C70F8100BB062A /* mTunesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A3EAB20C70F8100BB062A /* mTunesTests.swift */; };
 		090A3EB720C70F8100BB062A /* mTunesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090A3EB620C70F8100BB062A /* mTunesUITests.swift */; };
+		09AC81D820CD2B3400ADAAD0 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC81D720CD2B3400ADAAD0 /* SWRevealViewController.m */; };
 		09B9738C20CABC0A00ACC6E2 /* ApplicationAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9738B20CABC0A00ACC6E2 /* ApplicationAssembly.swift */; };
 		09B9738E20CABC1900ACC6E2 /* CoreComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9738D20CABC1900ACC6E2 /* CoreComponents.swift */; };
 		09B9739420CAC36F00ACC6E2 /* AuthorizationAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9739320CAC36F00ACC6E2 /* AuthorizationAPIManager.swift */; };
@@ -70,8 +72,9 @@
 
 /* Begin PBXFileReference section */
 		01456D0720C7CB2B97CC1CEB /* MusicListInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MusicListInteractorInput.swift; sourceTree = "<group>"; };
-		09093FDB20CC12AF00D9D0C1 /* MusicListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListCell.swift; sourceTree = "<group>"; };
+		09093FDB20CC12AF00D9D0C1 /* MyMusicListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusicListCell.swift; sourceTree = "<group>"; };
 		09093FDD20CC1DCC00D9D0C1 /* MusicAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicAPIManager.swift; sourceTree = "<group>"; };
+		09093FDF20CC802B00D9D0C1 /* GlobalMusicListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalMusicListCell.swift; sourceTree = "<group>"; };
 		090A3E9320C70F7F00BB062A /* mTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		090A3E9620C70F7F00BB062A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		090A3E9820C70F7F00BB062A /* AutorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutorizationViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +88,9 @@
 		090A3EB220C70F8100BB062A /* mTunesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mTunesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		090A3EB620C70F8100BB062A /* mTunesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mTunesUITests.swift; sourceTree = "<group>"; };
 		090A3EB820C70F8100BB062A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09AC81D620CD2B3400ADAAD0 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		09AC81D720CD2B3400ADAAD0 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		09AC81DB20CD2DCA00ADAAD0 /* mTunes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mTunes-Bridging-Header.h"; sourceTree = "<group>"; };
 		09B9738B20CABC0A00ACC6E2 /* ApplicationAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembly.swift; sourceTree = "<group>"; };
 		09B9738D20CABC1900ACC6E2 /* CoreComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreComponents.swift; sourceTree = "<group>"; };
 		09B9739320CAC36F00ACC6E2 /* AuthorizationAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationAPIManager.swift; sourceTree = "<group>"; };
@@ -178,6 +184,7 @@
 		090A3E9520C70F7F00BB062A /* mTunes */ = {
 			isa = PBXGroup;
 			children = (
+				09AC81DB20CD2DCA00ADAAD0 /* mTunes-Bridging-Header.h */,
 				09B9739520CAC7A600ACC6E2 /* Entities */,
 				09B9739220CAC35400ACC6E2 /* Services */,
 				09B9738A20CABBD000ACC6E2 /* InitialAssemblies */,
@@ -221,6 +228,7 @@
 		092C998820C72E7E00411EF9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				09AC81D220CD2AD200ADAAD0 /* Profile */,
 				09B9739020CAC32900ACC6E2 /* Authorization */,
 				D61890EB681CBE64CF3A1853 /* MusicList */,
 			);
@@ -234,6 +242,23 @@
 				91A1CDD19C3085BE0AB88544 /* MusicList */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		09AC81D220CD2AD200ADAAD0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				09AC81D520CD2B3400ADAAD0 /* SWRevealViewController */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		09AC81D520CD2B3400ADAAD0 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				09AC81D620CD2B3400ADAAD0 /* SWRevealViewController.h */,
+				09AC81D720CD2B3400ADAAD0 /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 		09B9738A20CABBD000ACC6E2 /* InitialAssemblies */ = {
@@ -392,7 +417,8 @@
 		9ACA835FB981F45BE6EAA557 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				09093FDB20CC12AF00D9D0C1 /* MusicListCell.swift */,
+				09093FDB20CC12AF00D9D0C1 /* MyMusicListCell.swift */,
+				09093FDF20CC802B00D9D0C1 /* GlobalMusicListCell.swift */,
 				CDE189DE88D4B7B7B42F104A /* MusicListViewInput.swift */,
 				E053F6C8F38853A0D63C303D /* MusicListViewOutput.swift */,
 				E60FB4824801FFF70AB23E32 /* MusicListViewController.swift */,
@@ -696,10 +722,12 @@
 				ED8CDE10400D723E6EF7C130 /* MusicListViewOutput.swift in Sources */,
 				6B71F531AA2C00DF3069B8B0 /* MusicListViewController.swift in Sources */,
 				09B9739720CAC7B800ACC6E2 /* Profile.swift in Sources */,
-				09093FDC20CC12AF00D9D0C1 /* MusicListCell.swift in Sources */,
+				09093FDC20CC12AF00D9D0C1 /* MyMusicListCell.swift in Sources */,
 				09B9739920CAC7CA00ACC6E2 /* Music.swift in Sources */,
 				4BA6CCE92DBF1D2DFE0C6840 /* MusicListModuleInput.swift in Sources */,
+				09AC81D820CD2B3400ADAAD0 /* SWRevealViewController.m in Sources */,
 				DD8E4AC5F28BD30572E1A34C /* MusicListPresenter.swift in Sources */,
+				09093FE020CC802B00D9D0C1 /* GlobalMusicListCell.swift in Sources */,
 				09093FDE20CC1DCC00D9D0C1 /* MusicAPIManager.swift in Sources */,
 				B8DF87FEA30904F312DF5876 /* MusicListInteractorInput.swift in Sources */,
 				5119C8822FD80F6DF80A3348 /* MusicListInteractorOutput.swift in Sources */,
@@ -901,6 +929,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = InnoUniv.mTunes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "mTunes/mTunes-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -919,6 +948,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = InnoUniv.mTunes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "mTunes/mTunes-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

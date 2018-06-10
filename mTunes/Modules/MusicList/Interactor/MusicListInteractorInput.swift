@@ -9,5 +9,7 @@
 import Foundation
 
 protocol MusicListInteractorInput {
-    func getMyMusicList()
+    func getMyMusicList(filtering: String)
+    
+    func getGlobalMusicList(filtering: String)
 }

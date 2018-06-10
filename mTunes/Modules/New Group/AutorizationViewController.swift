@@ -30,22 +30,22 @@ class AutorizationViewController: UIViewController {
         let apiManager = appAssembly!.authorizationAPIManager() as! AuthorizationAPIManager
         
         apiManager.sendLoginRequest(self.login.text!, self.password.text!){ [weak self] in
-            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let nc = storyboard.instantiateViewController(withIdentifier: "MainNavigationController") as! UINavigationController
-            
-            if let rootVC = nc.viewControllers.first as? MusicListViewController {
-
-            rootVC.appAssembly = self?.appAssembly
-            
-                
-            self?.present(nc, animated: true, completion: nil)
-                
-            }
-            
+            self?.successAuthentication()
         }
+    }
+    
+    func successAuthentication(){
         
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let swReveal = storyboard.instantiateViewController(withIdentifier: "SwRevealController") as! SWRevealViewController
+
+        let nc = storyboard.instantiateViewController(withIdentifier: "MainNavigationController") as! UINavigationController
+        let musicVC = nc.viewControllers.first as! MusicListViewController
         
-       
+        musicVC.appAssembly = self.appAssembly
+        swReveal.frontViewController = nc
+        
+        UIApplication.shared.delegate?.window!!.rootViewController = swReveal
         
     }
     

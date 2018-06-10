@@ -16,4 +16,6 @@ protocol MusicListViewOutput {
     func viewIsReady()
     
     func searchBarTextChanged(newText: String)
+    
+    func addToMyMusic(cell: GlobalMusicListCell)
 }

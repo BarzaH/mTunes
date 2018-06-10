@@ -12,10 +12,25 @@ class MusicListInteractor: MusicListInteractorInput {
     var musicAPIManager: MusicAPIManager?
     
     
-    func getMyMusicList() {
+    func getMyMusicList(filtering: String) {
         musicAPIManager?.sendMyMusicListRequest(completion: { [weak self] (result) in
-            self?.output.processData(rawMusicListData: result)
+            
+            let rawMusicList = result.components(separatedBy: "\n")
+            self?.output.processMyMusicData(rawMyMusicList: rawMusicList)
         })
     }
     
+    func getGlobalMusicList(filtering: String) {
+        musicAPIManager?.sendMusicListRequest(completion: { [weak self] (result) in
+            
+            let rawMusicList = result.components(separatedBy: "\n")
+            
+            
+            let filteredData = filtering.isEmpty ? rawMusicList : rawMusicList.filter({(dataString: String) -> Bool in
+                return dataString.range(of: filtering, options: .caseInsensitive) != nil
+            })
+            
+            self?.output.processGlobalMusicData(rawGlobalMusicList: filteredData)
+        })
+    }
 }
